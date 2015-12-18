@@ -4,9 +4,9 @@ import java.util.Calendar;
 import java.util.Date;
 
 /*
- * comment
+ * Changed to implement iPersonRead and iPersonReadWrite
  */
-public abstract class Person {
+public abstract class Person implements iPersonRead, iPersonReadWrite {
 
 	private Date DOB;
 	private String FirstName;

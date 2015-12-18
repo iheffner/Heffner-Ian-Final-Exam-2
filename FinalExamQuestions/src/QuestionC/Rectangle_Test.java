@@ -26,18 +26,17 @@ public class Rectangle_Test {
 	public void tearDown() throws Exception {
 	}
 
-	@Test
-	public void Rectangle_Test1() {
-		
+	@Test(expected=IllegalRectangle.class)
+	public void Rectangle_Test1() throws IllegalRectangle {
+		//Throw the exception with negative values
 		Rectangle r2 = new Rectangle(-5, -10);
 		assertTrue(r2.ComputeArea() == 50);
 	}
 	
 	@Test
-	public void Rectangle_Test2() {
-		
-	
-		Rectangle r2 = new Rectangle(-5, -10);
+	public void Rectangle_Test2() throws IllegalRectangle {
+		//Don't throw the exception with positive values
+		Rectangle r2 = new Rectangle(5, 10);
 		assertTrue(r2.ComputeArea() == 50);
 	}
 	
