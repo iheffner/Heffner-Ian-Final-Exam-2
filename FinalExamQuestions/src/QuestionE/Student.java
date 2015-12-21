@@ -2,6 +2,7 @@ package QuestionE;
 
 import java.util.Date;
 
+
 public class Student extends Person {
 
 	private String Major;

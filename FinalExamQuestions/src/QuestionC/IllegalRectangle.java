@@ -4,6 +4,7 @@ import java.io.*;
 
 //Error class for when negative values are given
 
+
 public class IllegalRectangle extends Exception {
 	private int xValue;
 	private int yValue;
